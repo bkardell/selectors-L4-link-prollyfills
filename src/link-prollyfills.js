@@ -34,7 +34,7 @@
 	Hitch.add([
 		{
 			name: '-links-local',
-			base: 'a[href]',
+			base: '[href]',
 			type: 'selector',
 			filter:    function(match,argsString,o){
 				var a, i, wp, lp, 
@@ -57,7 +57,7 @@
 		},
 		{
 			name: '-links-target',
-			base: 'a[name]',
+			base: '[name]',
 			type: 'selector',
 			filter:    function(match,argsString,o){
 				return (window.location.hash && ("#" + match.name === window.location.hash));

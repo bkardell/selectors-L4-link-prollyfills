@@ -50,6 +50,8 @@
 								return false;
 							}
 						}
+					}else if(o.location !== match.href){
+						return false;
 					}
 					return true;
 				}

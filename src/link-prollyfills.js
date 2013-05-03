@@ -1,4 +1,3 @@
-
 (function(){
   // parseUri 1.2.2
 	// (c) Steven Levithan <stevenlevithan.com>
@@ -36,6 +35,7 @@
 		{
 			name: '-links-local',
 			base: 'a[href]',
+			type: 'selector',
 			filter:    function(match,argsString,o){
 				var a, i, wp, lp, 
 					w = parseUri(o.location),
@@ -58,6 +58,7 @@
 		{
 			name: '-links-target',
 			base: 'a[name]',
+			type: 'selector',
 			filter:    function(match,argsString,o){
 				return (window.location.hash && ("#" + match.name === window.location.hash));
 			}

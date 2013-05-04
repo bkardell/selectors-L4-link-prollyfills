@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<script src="//www.hitchjs.com/dist/hitch-0.6.3.js"></script>
+		<style data-hitch-interpret>
+			@-hitch-requires //rawgithub.com/bkardell/selectors-L4-link-prollyfills/master/src/link-prollyfills.js;
+
+			a{
+				display: block;
+				margin: 1em;
+				border: 1px solid black;
+				padding-left: 2em;
+			}
+
+			p{
+				border: 1px solid black;
+			}
+
+
+		    a:-links-local() { 
+		    	background-color:  red !important;  
+		    }
+
+
+		    a:-links-local(0) {  
+		    	background-color:  blue;  
+		    	font-style:  italic;
+		    	color: white;
+		    }
+
+		    a:-links-local(1) {  
+		    	background-color:  green; 
+		    }
+
+		    a:-links-local(2) {  
+		    	background-color:  orange; 
+		    }
+
+		    a:-links-local(3) {  
+		    	background-color:  yellow; 
+		    	color: blue;
+		    }
+
+		</style>
+	</head>
+	<body>
+
+		<p>
+	    	These should be blue with a white foreground because they match at the 0 level...
+		    <a href="/">/</a>
+		    <a href="/index.html">/index.html</a>
+		    <a href="http://bkardell.github.io">http://bkardell.github.io</a>
+		    <a href="http://bkardell.github.io/">http://bkardell.github.io/</a>
+		    <a href="//bkardell.github.io">//bkardell.github.io</a>
+		    <a href="//bkardell.github.io?test">//bkardell.github.io?test</a>
+		    <a href="//bkardell.github.io?test#ohboy">//bkardell.github.io?test#ohboy</a>
+		    <a href="//bkardell.github.io?test#ohboy">//bkardell.github.io?test#ohboy</a>
+		    <a href="//bkardell.github.io?test#ohboy/?::">//bkardell.github.io?test#ohboy/?::</a>
+		</p>
+
+		<p>
+			These should be green with a white foreground and italic because they match at the 1 level (and 0 and thus inherit)
+		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills">http://bkardell.github.io/selectors-L4-link-prollyfills</a>
+			<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill</a>
+			<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4</a>
+			<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-</a>
+		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-lin">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-lin</a>
+		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-links">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-links</a>
+
+		    <em>(for some reason ending in -link seems to not work, but -link anywhere but at the end is ok?)</em>
+		</p>
+		
+		<p>
+			These should be orange with a white foreground and italics because they match at the 2 level (and 1 and 0 and thus inherit)
+		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/</a>
+		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/somethingomething">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/something</a>
+		   	<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/somethingomething?test=ok/true">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/somethingomething?test=ok/true</a>
+		</p>
+
+		<p>
+			These should be orange with a white foreground and italics because they match at the 3 level (and 1 and 0 and thus inherit)
+		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/</a>
+		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/somethingomething">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/something</a>
+		   	<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/somethingomething?test=ok/true">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/somethingomething?test=ok/true</a>
+		   	 <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/foo/blah.html">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill-selectorsL4-link/foo/blah.html</a>
+		</p>
+
+	</body>
+
+</html>

@@ -40,8 +40,8 @@ Demos?
 ======
 Latest demos at ...
 
-http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/local-links.html
-http://bkardell.github.io/selectors-L4-link-prollyfills/examples/target/target-links.html
+* http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/local-links.html
+* http://bkardell.github.io/selectors-L4-link-prollyfills/examples/target/target-links.html
 
 
 How can I participate?

@@ -17,11 +17,11 @@
 			}
 
 
-		    a:-links-target() { 
-		    	background-color:  red !important;  
-		    }
+			p:-links-target() { 
+			    	background-color:  yellow;  
+			}
+			
 
-}
 
 		</style>
 	</head>
@@ -35,7 +35,7 @@
 
 
 		<p>
-	    	These should be blue with a white foreground because they match at the 0 level...
+	    	none of these should match anything...
 		    <a href="/">/</a>
 		    <a href="/index.html">/index.html</a>
 		    <a href="http://bkardell.github.io">http://bkardell.github.io</a>
@@ -46,31 +46,14 @@
 		    <a href="//bkardell.github.io?test#ohboy">//bkardell.github.io?test#ohboy</a>
 		    <a href="//bkardell.github.io?test#ohboy/?::">//bkardell.github.io?test#ohboy/?::</a>
 		</p>
-
-		<p>
-			These should be green with a white foreground and italic because they match at the 1 level (and 0 and thus inherit)
-		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills">http://bkardell.github.io/selectors-L4-link-prollyfills</a>
-			<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill</a>
-			<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples.html">http://bkardell.github.io/selectors-L4-link-prollyfills/examples</a>
-			<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples-">http://bkardell.github.io/selectors-L4-link-prollyfills/examples-</a>
-
-		    <em>(for some reason ending in -link seems to not work, but -link anywhere but at the end is ok?)</em>
+		
+		
+		
+		<p name="test1">
+			If the URL has hatches the name property, the element would be styled with a yellow backgroud.
+		    	<a href="#test1">Click me to try it...</a>
 		</p>
 		
-		<p>
-			These should be orange with a white foreground and italics because they match at the 2 level (and 1 and 0 and thus inherit)
-		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/</a>
-		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples">http://bkardell.github.io/selectors-L4-link-prollyfills/examples</a>
-		   	<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples?test=ok/true">http://bkardell.github.io/selectors-L4-link-prollyfills/examples?test=ok/true</a>
-		</p>
-
-		<p>
-			These should be yellow with a white foreground and bold italics because they match at the 3 level (and 1 and 0 and thus inherit)
-		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/</a>
-		    <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/somethingomething">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/something</a>
-		   	<a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/somethingomething?test=ok/true">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/somethingomething?test=ok/true</a>
-		   	 <a href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/foo/blah.html">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/foo/blah.html</a>
-		</p>
 
 	</body>
 

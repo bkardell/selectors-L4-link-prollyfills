@@ -62,7 +62,7 @@
 			base: '[name]',
 			type: 'selector',
 			filter:    function(match,argsString,o){
-				return (window.location.hash && ("#" + match.name === window.location.hash));
+				return (window.location.hash && ("#" + match.getAttribute('name') === window.location.hash));
 			}
 		}
 	]);

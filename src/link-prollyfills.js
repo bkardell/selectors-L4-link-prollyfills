@@ -1,4 +1,5 @@
 (function(){
+	window.addEventListener("hashchange", Hitch.go, false);
   // parseUri 1.2.2
 	// (c) Steven Levithan <stevenlevithan.com>
 	// MIT License

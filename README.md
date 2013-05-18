@@ -6,10 +6,13 @@ CSS Selectors Level 4 link Prollyfills
 What's all this?
 ================
 Prollyfills (speculative polyfills) for CSS link/target pseudo-classes currently proposed in CSS Selectors Level 4 Draft as of http://www.w3.org/TR/2011/WD-selectors4-20110929/.
+They are author prefixed, rather than vendor prefixed so you can use them in a website today with a single prefix, get experience using them, contribute
+feedback to the spec authors or even form 
 
 Why do I care?
 ==============
-Why you should care and participate explained (provide link).
+[Dropping the F-Bomb on Web Standards](http://briankardell.wordpress.com/2013/05/17/dropping-the-f-bomb/)
+[Prollyfill.org]
 
 How do I use it?
 ================

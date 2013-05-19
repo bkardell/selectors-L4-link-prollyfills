@@ -56,4 +56,4 @@ How can I participate?
  * Open issues if you find some.  I welcome subjective comments too - I will do my best to represent them to www-style if you feel that that is too much work for you.
  * Send me a pull in this readme adding somewhere where you've used it/how - describe your use case and how it worked out
  * Add examples, send pull requests if you can make them better
- * Write some reftests, here is [an excellent presentation by Adobe]([http://adobe.github.io/web-platform/presentations/testtwf-how-to-write-a-reftest/#/]) for Test The Web Forward.  Let's try TDD for Web Standards, can you imagine?
+ * Write some reftests, here is [an excellent presentation by Adobe](http://adobe.github.io/web-platform/presentations/testtwf-how-to-write-a-reftest) for Test The Web Forward.  Let's try TDD for Web Standards, can you imagine?

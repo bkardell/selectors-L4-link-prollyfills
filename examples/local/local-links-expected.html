@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  	<style>
+			a{
+				display: block;
+				margin: 1em;
+				border: 1px solid black;
+				padding-left: 2em; }
+
+			p{
+							border: 1px solid black; }
+
+			/* was: a:-links-local() */
+			a._0 { 
+							background-color:  red !important; }
+
+			/* was: a:-links-local(0) */
+			a._1 {  
+							background-color:  blue;  
+							font-style:  italic;
+							color: white; }
+
+			/* was: a:-links-local(1) */
+			a._2 {  
+							background-color:  green; }
+
+			/* was: a:-links-local(2) */
+			a._3 {  
+							background-color:  orange; }
+
+			/* was: a:-links-local(3) */
+			a._4 {  
+							background-color:  yellow; 
+							font-weight: bold;
+							color: blue; }</style>
+	<body>
+		<p>
+		   Demonstration prollyfill <a href="http://www.w3.org/TR/2013/WD-selectors4-20130502/#local-pseudo">Based on this version of CSS Selectors Level 4 :local-pseudo</a>
+		   This box illustrates a link that is *not* local.  For more information on what all this is about or to contribute 
+		   test cases, bug reports, fixed, or to fork and make alternate suggestions, please see <a href="https://github.com/bkardell/selectors-L4-link-prollyfills/tree/master">the github project.</a>
+		</p>
+		
+		<p>
+	    	These should be blue with a white foreground because they match at the 0 level...
+		    <a class="_1" href="http://bkardell.github.io/">/</a>
+		    <a class="_1" href="http://bkardell.github.io/index.html">/index.html</a>
+		    <a class="_1" href="http://bkardell.github.io/">http://bkardell.github.io</a>
+		    <a class="_1" href="http://bkardell.github.io/">http://bkardell.github.io/</a>
+		    <a class="_1" href="http://bkardell.github.io/">//bkardell.github.io</a>
+		    <a class="_1" href="http://bkardell.github.io/?test">//bkardell.github.io?test</a>
+		    <a class="_1" href="http://bkardell.github.io/?test#ohboy">//bkardell.github.io?test#ohboy</a>
+		    <a class="_1" href="http://bkardell.github.io/?test#ohboy">//bkardell.github.io?test#ohboy</a>
+		    <a class="_1" href="http://bkardell.github.io/?test#ohboy/?::">//bkardell.github.io?test#ohboy/?::</a>
+		</p>
+
+		<p>
+			These should be green with a white foreground and italic because they match at the 1 level (and 0 and thus inherit)
+		    <a class="_1 _2" href="http://bkardell.github.io/selectors-L4-link-prollyfills">http://bkardell.github.io/selectors-L4-link-prollyfills</a>
+			<a class="_1 _2" href="http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill">http://bkardell.github.io/selectors-L4-link-prollyfills/prollyfill</a>
+			<a class="_1 _2" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples.html">http://bkardell.github.io/selectors-L4-link-prollyfills/examples</a>
+			<a class="_1 _2" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples-">http://bkardell.github.io/selectors-L4-link-prollyfills/examples-</a>
+
+		    <em>(for some reason ending in -link seems to not work, but -link anywhere but at the end is ok?)</em>
+		</p>
+		
+		<p>
+			These should be orange with a white foreground and italics because they match at the 2 level (and 1 and 0 and thus inherit)
+		    <a class="_1 _2 _3" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/</a>
+		    <a class="_1 _2 _3" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples">http://bkardell.github.io/selectors-L4-link-prollyfills/examples</a>
+		   	<a class="_1 _2 _3" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples?test=ok/true">http://bkardell.github.io/selectors-L4-link-prollyfills/examples?test=ok/true</a>
+		</p>
+
+		<p>
+			These should be yellow with a white foreground and bold italics 
+because they match at the 3 level (and 1 and 0 and thus inherit)
+		    <a class="_1 _2 _3 _4" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/</a>
+		    <a class="_1 _2 _3 _4" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/somethingomething">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/something</a>
+		   	<a class="_1 _2 _3 _4" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/somethingomething?test=ok/true">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/somethingomething?test=ok/true</a>
+		   	 <a class="_1 _2 _3 _4" href="http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/foo/blah.html">http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/foo/blah.html</a>
+		</p>
+
+	
+
+
+</body></html>

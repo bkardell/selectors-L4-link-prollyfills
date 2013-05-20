@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  	<script src="//www.hitchjs.com/dist/hitch-0.6.3.js"></script>
-		<style data-hitch-interpret>
-			@-hitch-requires //rawgithub.com/bkardell/selectors-L4-link-prollyfills/master/src/link-prollyfills.js;
-
-			a, a:visited{
-				display: block;
-				margin: 1em;
-				border: 1px solid black;
-				padding-left: 2em;
-				color: blue;
-			}
-
-			p{
-				border: 1px solid black;
-			}
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+	<style>
+	a, a:visited{
+		display: block;
+		margin: 1em;
+		border: 1px solid black;
+		padding-left: 2em;
+		color: blue;
+	}
 
 
-			p:-links-target() { 
-			    	background-color:  yellow;  
-			}
-			
+	p{
+		border: 1px solid black; 
+	}
 
-
-		</style>
+	/* was: p:-links-target() */
+	p._0 { 
+		background-color:  yellow; 
+	}
+	</style>
 	</head>
 	<body>
 		<p>
@@ -48,9 +43,10 @@
 		
 		
 		
-		<p name="test2">
+		<p name="test2" class="_0">
 			This space intentionally left blank.
 		</p>
-	</body>
+	
 
-</html>
+
+</body></html>

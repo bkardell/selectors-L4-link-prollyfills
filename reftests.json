@@ -1,0 +1,23 @@
+{
+    "browsers": [
+        "firefox"
+    ],
+    "tests": [
+
+        {
+            "test": "http://bkardell.github.io/selectors-L4-link-prollyfills/examples/local/local-links.html"
+        },
+        {
+            "test": "http://bkardell.github.io/selectors-L4-link-prollyfills/examples/target/target-links.html",
+            "expected": "http://bkardell.github.io/selectors-L4-link-prollyfills/examples/target/target-links-expected-0.html#"
+        },
+        {
+             "test": "http://bkardell.github.io/selectors-L4-link-prollyfills/examples/target/target-links.html#test1",
+             "expected": "http://bkardell.github.io/selectors-L4-link-prollyfills/examples/target/target-links-expected-1.html#"
+        },
+        {
+             "test": "http://bkardell.github.io/selectors-L4-link-prollyfills/examples/target/target-links.html#test2",
+             "expected": "http://bkardell.github.io/selectors-L4-link-prollyfills/examples/target/target-links-expected-2.html#"
+        }
+    ]
+}

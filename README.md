@@ -13,7 +13,8 @@ The path to native should be easy should the spec get implemented.
 Why do I care?
 ==============
 Here are some links that explain:
-* [Dropping the F-Bomb on Web Standards](http://briankardell.wordpress.com/2013/05/17/dropping-the-f-bomb/)
+* [Extend the Web Forward by Yehuda Katz](http://yehudakatz.com/2013/05/21/extend-the-web-forward/)
+* [Dropping the F-Bomb on Web Standards by Brian Kardell](http://briankardell.wordpress.com/2013/05/17/dropping-the-f-bomb/)
 * [Prollyfill.org](prollyfill.org)
 
 

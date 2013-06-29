@@ -1,5 +1,5 @@
 (function(){
-  window.addEventListener("hashchange", Hitch.go, false);
+	window.addEventListener("hashchange", Hitch.go, false);
   // parseUri 1.2.2
 	// (c) Steven Levithan <stevenlevithan.com>
 	// MIT License
@@ -34,36 +34,19 @@
 	
 	Hitch.add([
 		{
-			name: '-links-local',
+			name: '-links-level',
 			base: '[href]',
 			type: 'selector',
 			filter:    function(match,argsString,o){
-				var a, i, wp, lp, 
-					w = parseUri(o.location),
+				var a, i, lp, 
 					l = parseUri(match.href);
 				if(w.host===l.host){
 					if(argsString && !isNaN(argsString)){
 						a = parseInt(argsString,10);
-						wp = w.path.split('/');
 						lp = l.path.split('/');
-						for(i=0;i<a+1;i++){
-							if(wp[i]!==lp[i]){
-								return false;
-							}
-						}
-					}else if(o.location !== match.href){
-						return false;
+						return a === lp.length-1;
 					}
-					return true;
 				}
-			}
-		},
-		{
-			name: '-links-target',
-			base: '[name]',
-			type: 'selector',
-			filter:    function(match,argsString,o){
-				return (window.location.hash && ("#" + match.getAttribute('name') === window.location.hash));
 			}
 		}
 	]);

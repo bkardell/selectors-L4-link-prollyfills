@@ -39,6 +39,7 @@
 			type: 'selector',
 			filter:    function(match,argsString,o){
 				var a, i, lp, 
+					w = parseUri(o.location),
 					l = parseUri(match.href);
 				if(w.host===l.host){
 					if(argsString && !isNaN(argsString)){

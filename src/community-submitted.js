@@ -45,7 +45,7 @@
 					if(argsString && !isNaN(argsString)){
 						a = parseInt(argsString,10);
 						lp = l.path.split('/');
-						return a === lp.length-1;
+						return a < lp.length-1;
 					}
 				}
 			}

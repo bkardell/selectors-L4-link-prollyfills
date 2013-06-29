@@ -44,7 +44,7 @@
 				if(w.host===l.host){
 					if(argsString && !isNaN(argsString)){
 						a = parseInt(argsString,10);
-						return a < l.path.match(/\//g);
+						return a < l.path.match(/\//g).length;
 					}
 				}
 			}

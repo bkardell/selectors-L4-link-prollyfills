@@ -13,7 +13,8 @@ The path to native should be easy should the spec get implemented.
 Why do I care?
 ==============
 Here are some links that explain:
-* [Dropping the F-Bomb on Web Standards](http://briankardell.wordpress.com/2013/05/17/dropping-the-f-bomb/)
+* [Extend the Web Forward by Yehuda Katz](http://yehudakatz.com/2013/05/21/extend-the-web-forward/)
+* [Dropping the F-Bomb on Web Standards by Brian Kardell](http://briankardell.wordpress.com/2013/05/17/dropping-the-f-bomb/)
 * [Prollyfill.org](prollyfill.org)
 
 
@@ -57,3 +58,6 @@ How can I participate?
  * Send me a pull in this readme adding somewhere where you've used it/how - describe your use case and how it worked out
  * Add examples, send pull requests if you can make them better
  * Write some reftests: You can use [snaps](https://github.com/bkardell/snaps) to contribute simple ones and send a pull for reftests.json.  If you want to go all out, here is [an excellent presentation by Adobe](http://adobe.github.io/web-platform/presentations/testtwf-how-to-write-a-reftest) on writing official W3C reftests for Test The Web Forward.  Let's try TDD for Web Standards, can you imagine?
+
+
+Want even better ways forward?  See [extensiblewebmanifesto.org](extensiblewebmanifesto.org) and #extendthewebforward.
